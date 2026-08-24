@@ -1,69 +1,169 @@
-import Image from "next/image";
+import { Hero } from "@/components/landing/Hero";
+import { Features } from "@/components/landing/Features";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="flex flex-col min-h-screen">
+      <Hero />
+      <Features />
+
+      {/* How It Works */}
+      <section id="how-it-works" className="py-24 bg-white border-b-[3px] border-border">
+        <div className="container px-6 md:px-12">
+          <div className="text-center mb-16">
+            <div className="inline-block bg-accent text-accent-foreground px-4 py-1.5 brutal-border brutal-shadow-sm -rotate-1 font-black uppercase tracking-widest text-sm mb-6">
+              Dead Simple
+            </div>
+            <h2 className="font-heading text-5xl md:text-7xl font-black uppercase tracking-tighter">
+              How It <span className="text-primary underline decoration-[8px] underline-offset-4">Works</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {[
+              {
+                step: "01",
+                icon: "📅",
+                title: "Book a Slot",
+                desc: "Pick a free time on our calendar below. No sign-up, no lengthy forms. Just pick and confirm.",
+                color: "bg-primary text-primary-foreground",
+                rotate: "-rotate-2",
+              },
+              {
+                step: "02",
+                icon: "👻",
+                title: "Stay Anonymous",
+                desc: "You get a link. You join. We never know who you are. Your secrets stay yours. Period.",
+                color: "bg-secondary text-secondary-foreground",
+                rotate: "rotate-2",
+              },
+              {
+                step: "03",
+                icon: "🔥",
+                title: "Get the Sauce",
+                desc: "Your certified Date Doctor drops real, actionable advice. Leave with a concrete game plan.",
+                color: "bg-accent text-accent-foreground",
+                rotate: "-rotate-1",
+              },
+            ].map((item, i) => (
+              <div key={i} className={`${item.color} ${item.rotate} p-8 brutal-border brutal-shadow`}>
+                <div className="text-7xl font-black opacity-20 font-heading mb-2">{item.step}</div>
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="font-heading text-2xl font-black uppercase tracking-tight mb-3">{item.title}</h3>
+                <p className="font-semibold text-base opacity-90 leading-snug">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 bg-primary text-primary-foreground border-b-[3px] border-border">
+        <div className="container px-6 md:px-12">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-5xl md:text-7xl font-black uppercase tracking-tighter bg-white text-black inline-block px-6 py-3 brutal-border brutal-shadow-sm rotate-1">
+              Receipts. 🧾
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                quote: "Bro literally gave me the exact text to send. We're going on a third date this Friday. Absolute cheat code.",
+                tag: "@mumbai_dude",
+                rotate: "-rotate-2",
+              },
+              {
+                quote: "Finally someone who gets the Indian dating scene. Stopped getting ghosted in literally 2 sessions.",
+                tag: "@delhi_girlie",
+                rotate: "rotate-2",
+              },
+              {
+                quote: "My parents were forcing rishtas on me. My Date Doctor helped me set boundaries AND keep them happy. 🙏",
+                tag: "@confused_bng",
+                rotate: "-rotate-1",
+              },
+              {
+                quote: "I'm a shy guy. My doc gave me a step-by-step approach plan. She said yes. I'm still shaking.",
+                tag: "@introvert_wins",
+                rotate: "rotate-1",
+              },
+              {
+                quote: "Was in a toxic situationship. One session helped me see it clearly and finally move on. No cap.",
+                tag: "@healing_era",
+                rotate: "-rotate-2",
+              },
+              {
+                quote: "The advice is so culturally relevant. Not some generic Western stuff. Feels like your smart best friend talking.",
+                tag: "@hyderabad_anon",
+                rotate: "rotate-2",
+              },
+            ].map((t, i) => (
+              <div key={i} className={`bg-white text-black p-6 brutal-border brutal-shadow-sm flex flex-col justify-between ${t.rotate}`}>
+                <div className="text-4xl mb-3">💬</div>
+                <p className="font-bold text-base leading-tight mb-6">"{t.quote}"</p>
+                <div className="border-t-[3px] border-black pt-3 mt-auto">
+                  <p className="font-black font-heading bg-secondary text-secondary-foreground inline-block px-2 py-0.5 uppercase tracking-wide text-sm">{t.tag}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Calendly Booking Section */}
+      <section id="booking" className="py-24 bg-background border-b-[3px] border-border">
+        <div className="container px-6 md:px-12">
+          <div className="text-center mb-12">
+            <div className="inline-block bg-secondary text-secondary-foreground px-4 py-1.5 brutal-border brutal-shadow-sm rotate-1 font-black uppercase tracking-widest text-sm mb-6">
+              First Session is FREE
+            </div>
+            <h2 className="font-heading text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">
+              Book Your <span className="text-primary underline decoration-[8px] underline-offset-4">Session</span>
+            </h2>
+            <p className="text-xl font-bold max-w-xl mx-auto">
+              Pick a time that works for you. 30 minutes. 100% anonymous. Real advice.
+            </p>
+          </div>
+
+          {/* Calendly Inline Embed */}
+          <div className="brutal-border brutal-shadow bg-white max-w-4xl mx-auto rotate-1 overflow-hidden">
+            <div className="bg-primary text-primary-foreground p-4 flex items-center gap-3 border-b-[3px] border-black">
+              <div className="w-4 h-4 bg-white rounded-full brutal-border" />
+              <div className="w-4 h-4 bg-white rounded-full brutal-border" />
+              <div className="w-4 h-4 bg-white rounded-full brutal-border" />
+              <span className="font-black uppercase tracking-wider text-sm ml-2">calendly.com/drdate/30min</span>
+            </div>
+            <iframe
+              src="https://calendly.com/drdate/30min?embed_type=Inline&hide_gdpr_banner=1&primary_color=e11d48"
+              width="100%"
+              height="700"
+              frameBorder="0"
+              title="Book a Date Doctor Session"
+            />
+          </div>
+
+          <p className="text-center mt-8 font-bold text-muted-foreground text-sm uppercase tracking-widest">
+            🔒 Your identity is never shared. Ghost Mode stays ON.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+      </section>
+
+
+
+      {/* Final CTA Banner */}
+      <section className="py-20 bg-secondary border-b-[3px] border-border">
+        <div className="container px-6 md:px-12 text-center">
+          <h2 className="font-heading text-4xl md:text-6xl font-black uppercase tracking-tighter text-secondary-foreground mb-6">
+            Stop overthinking. <br /> Start winning. 🏆
+          </h2>
+          <a href="#booking">
+            <button className="h-16 px-14 text-xl font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">
+              Lock In Your Free Session →
+            </button>
           </a>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
