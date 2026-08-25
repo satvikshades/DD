@@ -132,10 +132,10 @@ export default function Home() {
               <div className="w-4 h-4 bg-white rounded-full brutal-border" />
               <div className="w-4 h-4 bg-white rounded-full brutal-border" />
               <div className="w-4 h-4 bg-white rounded-full brutal-border" />
-              <span className="font-black uppercase tracking-wider text-sm ml-2">calendly.com/drdate/30min</span>
+              <span className="font-black uppercase tracking-wider text-sm ml-2">calendly.com/thedatedoc18/30min</span>
             </div>
             <iframe
-              src="https://calendly.com/drdate/30min?embed_type=Inline&hide_gdpr_banner=1&primary_color=e11d48"
+              src="https://calendly.com/thedatedoc18/30min?embed_type=Inline&hide_gdpr_banner=1&primary_color=e11d48"
               width="100%"
               height="700"
               frameBorder="0"
