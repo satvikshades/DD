@@ -126,32 +126,48 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Cal.com Inline Embed */}
-          <div className="brutal-border brutal-shadow bg-white max-w-4xl mx-auto rotate-1 overflow-hidden">
-            <div className="bg-primary text-primary-foreground p-4 flex items-center gap-3 border-b-[3px] border-black">
-              <div className="w-4 h-4 bg-white rounded-full brutal-border" />
-              <div className="w-4 h-4 bg-white rounded-full brutal-border" />
-              <div className="w-4 h-4 bg-white rounded-full brutal-border" />
-              <span className="font-black uppercase tracking-wider text-sm ml-2">cal.com/drdate-su6xkx/30min</span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-7xl mx-auto">
+            {/* Step 1: Calendar */}
+            <div className="lg:col-span-8 order-2 lg:order-1">
+              <div className="brutal-border brutal-shadow bg-white rotate-1 hover:rotate-0 transition-transform overflow-hidden">
+                <div className="bg-primary text-primary-foreground p-4 flex items-center gap-3 border-b-[3px] border-black">
+                  <div className="w-4 h-4 bg-white rounded-full brutal-border" />
+                  <div className="w-4 h-4 bg-white rounded-full brutal-border" />
+                  <div className="w-4 h-4 bg-white rounded-full brutal-border" />
+                  <span className="font-black uppercase tracking-wider text-sm ml-2">Step 1: Pick a Slot</span>
+                </div>
+                <iframe
+                  src="https://cal.com/drdate-su6xkx/30min?embed=true&layout=month_view&theme=light"
+                  width="100%"
+                  height="700"
+                  frameBorder="0"
+                  title="Book a Date Doctor Session"
+                  style={{ border: 'none' }}
+                />
+              </div>
             </div>
-            <iframe
-              src="https://cal.com/drdate-su6xkx/30min?embed=true&layout=month_view&theme=light"
-              width="100%"
-              height="700"
-              frameBorder="0"
-              title="Book a Date Doctor Session"
-              style={{ border: 'none' }}
-            />
-          </div>
 
-          <div className="mt-8 text-center bg-accent text-accent-foreground p-6 brutal-border brutal-shadow max-w-2xl mx-auto -rotate-1">
-            <h3 className="font-heading text-2xl font-black uppercase mb-2">Step 2: Secure Your Invite</h3>
-            <p className="font-bold mb-4">Pay ₹29 on Buy Me a Chai by entering the custom amount to get your calendar invitation accepted.</p>
-            <a href="https://buymeachai.in/drdate" target="_blank" rel="noopener noreferrer">
-              <button className="h-12 px-8 text-lg font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow-sm hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">
-                Pay via Buy Me a Chai →
-              </button>
-            </a>
+            {/* Step 2: Payment */}
+            <div className="lg:col-span-4 order-1 lg:order-2 flex flex-col justify-center">
+              <div className="bg-accent text-accent-foreground p-8 brutal-border brutal-shadow -rotate-2 hover:rotate-0 transition-transform">
+                <h3 className="font-heading text-3xl font-black uppercase mb-4 leading-tight">
+                  Step 2: <br/> Secure Invite
+                </h3>
+                <div className="bg-white text-black p-4 brutal-border mb-6 rotate-1">
+                  <p className="font-black text-xl mb-1">Session Fee:</p>
+                  <p className="font-heading text-6xl text-primary mb-2">₹29</p>
+                  <p className="font-bold text-sm text-muted-foreground uppercase">For 30 Minutes</p>
+                </div>
+                <p className="font-bold mb-6 text-lg leading-snug">
+                  To get your calendar invitation accepted, please pay exactly <span className="bg-white text-black px-1 border-2 border-black">₹29</span> as a custom amount.
+                </p>
+                <a href="https://buymeachai.in/drdate" target="_blank" rel="noopener noreferrer" className="block">
+                  <button className="w-full h-16 text-lg font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow-sm hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">
+                    Pay on Buy Me a Chai →
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
 
           <p className="text-center mt-8 font-bold text-muted-foreground text-sm uppercase tracking-widest">
