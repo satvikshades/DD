@@ -111,12 +111,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Calendly Booking Section */}
+      {/* Cal.com Booking Section */}
       <section id="booking" className="py-24 bg-background border-b-[3px] border-border">
         <div className="container px-6 md:px-12">
           <div className="text-center mb-12">
             <div className="inline-block bg-secondary text-secondary-foreground px-4 py-1.5 brutal-border brutal-shadow-sm rotate-1 font-black uppercase tracking-widest text-sm mb-6">
-              First Session is FREE
+              ₹29 for 30 Mins Session
             </div>
             <h2 className="font-heading text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">
               Book Your <span className="text-primary underline decoration-[8px] underline-offset-4">Session</span>
@@ -126,21 +126,32 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Calendly Inline Embed */}
+          {/* Cal.com Inline Embed */}
           <div className="brutal-border brutal-shadow bg-white max-w-4xl mx-auto rotate-1 overflow-hidden">
             <div className="bg-primary text-primary-foreground p-4 flex items-center gap-3 border-b-[3px] border-black">
               <div className="w-4 h-4 bg-white rounded-full brutal-border" />
               <div className="w-4 h-4 bg-white rounded-full brutal-border" />
               <div className="w-4 h-4 bg-white rounded-full brutal-border" />
-              <span className="font-black uppercase tracking-wider text-sm ml-2">calendly.com/thedatedoc18/30min</span>
+              <span className="font-black uppercase tracking-wider text-sm ml-2">cal.com/drdate-su6xkx/30min</span>
             </div>
             <iframe
-              src="https://calendly.com/thedatedoc18/30min?embed_type=Inline&hide_gdpr_banner=1&primary_color=e11d48"
+              src="https://cal.com/drdate-su6xkx/30min?embed=true&layout=month_view&theme=light"
               width="100%"
               height="700"
               frameBorder="0"
               title="Book a Date Doctor Session"
+              style={{ border: 'none' }}
             />
+          </div>
+
+          <div className="mt-8 text-center bg-accent text-accent-foreground p-6 brutal-border brutal-shadow max-w-2xl mx-auto -rotate-1">
+            <h3 className="font-heading text-2xl font-black uppercase mb-2">Step 2: Secure Your Invite</h3>
+            <p className="font-bold mb-4">Pay ₹29 on Buy Me a Chai by entering the custom amount to get your calendar invitation accepted.</p>
+            <a href="https://buymeachai.in/drdate" target="_blank" rel="noopener noreferrer">
+              <button className="h-12 px-8 text-lg font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow-sm hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">
+                Pay via Buy Me a Chai →
+              </button>
+            </a>
           </div>
 
           <p className="text-center mt-8 font-bold text-muted-foreground text-sm uppercase tracking-widest">
@@ -159,7 +170,7 @@ export default function Home() {
           </h2>
           <a href="#booking">
             <button className="h-16 px-14 text-xl font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">
-              Lock In Your Free Session →
+              Book Your Session Now →
             </button>
           </a>
         </div>

@@ -27,14 +27,14 @@ export function Hero() {
             We guide men to get women, and women to get men. 💯
           </p>
           <p className="text-lg font-medium mt-3 opacity-90">
-            Anonymous calls. Verified doctors. Zero judgment. Book your first session — free.
+            Anonymous calls. Verified doctors. Zero judgment. Book your session — ₹29.
           </p>
         </div>
         
         <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-20">
           <a href="#booking">
             <Button className="h-16 px-12 text-xl font-black uppercase tracking-wider bg-primary text-primary-foreground brutal-border brutal-shadow hover:bg-primary transition-transform active:translate-x-1 active:translate-y-1 group">
-              Book Free Session
+              Book Session
               <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" strokeWidth={3} />
             </Button>
           </a>

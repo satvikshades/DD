@@ -22,8 +22,8 @@ export function Features() {
       rotate: "-rotate-1",
     },
     {
-      title: "First 2 on the House",
-      description: "Try before you buy. Your first two sessions are FREE. Get a taste of the rizz mechanics, zero risk.",
+      title: "Affordable Sessions",
+      description: "Get a taste of the rizz mechanics. Only ₹29 for a 30 mins session.",
       color: "bg-white text-black",
       icon: "💸",
       rotate: "rotate-1",
