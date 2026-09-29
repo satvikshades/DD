@@ -23,7 +23,7 @@ export function Features() {
     },
     {
       title: "Affordable Sessions",
-      description: "Get a taste of the rizz mechanics. Only ₹29 for a 30 mins session.",
+      description: "Get a taste of the rizz mechanics. Only ₹500 for a 30 mins session.",
       color: "bg-white text-black",
       icon: "💸",
       rotate: "rotate-1",

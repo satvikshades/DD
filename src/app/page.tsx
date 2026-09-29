@@ -116,7 +116,7 @@ export default function Home() {
         <div className="container px-6 md:px-12">
           <div className="text-center mb-12">
             <div className="inline-block bg-secondary text-secondary-foreground px-4 py-1.5 brutal-border brutal-shadow-sm rotate-1 font-black uppercase tracking-widest text-sm mb-6">
-              ₹29 for 30 Mins Session
+              ₹500 for 30 Mins Session
             </div>
             <h2 className="font-heading text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">
               Book Your <span className="text-primary underline decoration-[8px] underline-offset-4">Session</span>
@@ -155,11 +155,11 @@ export default function Home() {
                 </h3>
                 <div className="bg-white text-black p-4 brutal-border mb-6 rotate-1">
                   <p className="font-black text-xl mb-1">Session Fee:</p>
-                  <p className="font-heading text-6xl text-primary mb-2">₹29</p>
+                  <p className="font-heading text-6xl text-primary mb-2">₹500</p>
                   <p className="font-bold text-sm text-muted-foreground uppercase">For 30 Minutes</p>
                 </div>
                 <p className="font-bold mb-6 text-lg leading-snug">
-                  To get your calendar invitation accepted, please pay exactly <span className="bg-white text-black px-1 border-2 border-black">₹29</span> as a custom amount.
+                  To get your calendar invitation accepted, please pay exactly <span className="bg-white text-black px-1 border-2 border-black">₹500</span> as a custom amount.
                 </p>
                 <a href="https://buymeachai.in/drdate" target="_blank" rel="noopener noreferrer" className="block">
                   <button className="w-full h-16 text-lg font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow-sm hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">

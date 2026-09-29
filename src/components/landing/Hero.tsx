@@ -27,7 +27,7 @@ export function Hero() {
             We guide men to get women, and women to get men. 💯
           </p>
           <p className="text-lg font-medium mt-3 opacity-90">
-            Anonymous calls. Verified doctors. Zero judgment. Book your session — ₹29.
+            Anonymous calls. Verified doctors. Zero judgment. Book your session — ₹500.
           </p>
         </div>
         
