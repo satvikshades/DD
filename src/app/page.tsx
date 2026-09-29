@@ -137,7 +137,7 @@ export default function Home() {
                   <span className="font-black uppercase tracking-wider text-sm ml-2">Step 1: Pick a Slot</span>
                 </div>
                 <iframe
-                  src="https://cal.com/drdate-su6xkx/30min?embed=true&layout=month_view&theme=light"
+                  src="https://cal.com/dr-date-b4znbm/30min?embed=true&layout=month_view&theme=light"
                   width="100%"
                   height="700"
                   frameBorder="0"
