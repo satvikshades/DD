@@ -159,7 +159,7 @@ export default function Home() {
                   <p className="font-bold text-sm text-muted-foreground uppercase">For 30 Minutes</p>
                 </div>
                 <p className="font-bold mb-6 text-lg leading-snug">
-                  To get your calendar invitation accepted, please pay exactly <span className="bg-white text-black px-1 border-2 border-black">₹500</span> as a custom amount.
+                  To get your calendar invitation accepted, please pay exactly <span className="bg-white text-black px-1 border-2 border-black">₹500</span> as a custom amount within 10 minutes of booking.
                 </p>
                 <a href="https://buymeachai.in/drdate" target="_blank" rel="noopener noreferrer" className="block">
                   <button className="w-full h-16 text-lg font-black uppercase tracking-wider bg-black text-white brutal-border brutal-shadow-sm hover:-translate-y-1 hover:-translate-x-1 transition-transform active:translate-x-1 active:translate-y-1">
