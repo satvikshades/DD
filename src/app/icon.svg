@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g transform="rotate(-8 256 256)">
+    <rect x="80" y="80" width="352" height="352" fill="#F400A1" stroke="#000000" stroke-width="48" stroke-linejoin="miter" />
+    <text x="256" y="380" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="280" fill="#FFFFFF" text-anchor="middle">D</text>
+  </g>
+</svg>
